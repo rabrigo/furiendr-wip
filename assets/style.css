@@ -1,0 +1,387 @@
+* {
+    font-family: 'Dongle', 'Comic Sans', sans-serif;
+    font-weight: 700;
+    line-height: 0.8;
+    --bg-eggplant: #4e3b50;
+    --btn-junebud: #BDE25C;
+    --font-mandarin: #ed7e47;
+    --text-shadow: #2a202b;
+    --text-shadow-2: #403141;
+}
+
+nav .nav-wrapper {
+    background-color: var(--bg-eggplant);
+    height: 80px;
+    box-shadow: 0 0 10px rgb(159, 159, 159);
+}
+
+#paw-img {
+    margin-top: 15px;
+    position: relative;
+    left: 10%;
+    width: 50px;
+    filter: drop-shadow(2px 2px 5px var(--text-shadow));
+}
+
+.btn:hover {
+    background-color: #d1ff65;
+ }
+
+.btn {
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 700;
+    background: var(--btn-junebud);
+    color: var(--bg-eggplant);
+    border-radius: 10px;
+    padding-top: 3px;
+    text-shadow: none;
+}
+
+#furiends-button {
+    position: relative;
+    margin-top: 23px;
+    right: 5%;
+}
+
+ /* Furiendr logo */
+nav .brand-logo.center {
+    color: var(--font-mandarin);
+    margin: 12px 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px var(--text-shadow);
+}
+
+div.row {
+    display: flex;
+}
+
+.bounce-4 {
+    animation-name: bounce-4;
+    animation-timing-function: ease;
+}
+
+.pet-facts-column {
+    position: relative;
+    margin: 300px auto;
+    color: var(--bg-eggplant);
+    width: 15%;
+}
+
+
+/* .pet-facts-title::before {
+    content: url(./images/pencil-line.png);
+    position: relative;
+    top: 32px;
+    z-index: -1;
+} */
+
+.pet-facts-title {
+    font-size: 1.25rem;
+    line-height: 0.5;
+    display: block;
+}
+
+.cat-facts-card p, .dog-facts-card p {
+    margin: 5px 0;
+}
+
+.furiends-cards {    
+    padding: 10px;
+}
+
+.furiends-list-title {
+    width:50%;
+    padding:5px;
+    align-content: center;
+    margin-left:25%;
+}
+
+::placeholder { 
+    font-family: 'Dongle', 'Comic Sans', sans-serif;
+    font-size: 1rem;
+    color: rgb(4, 4, 4);
+}
+
+label span {
+    color: var(--font-mandarin);
+    text-shadow: 2px 2px 2px var(--text-shadow-2);
+    margin-left: 5px;
+}
+
+table tr td {
+    text-align: left;
+}
+
+.pet-parameters-card {
+    margin-top: 40px;
+    width: 50%;
+}
+
+.pet-parameters-card div.card {
+    background: none;
+    transition: none;
+    box-shadow: none;
+    padding: 0 30px;
+    border-radius: 50px;
+    background-color: var(--bg-eggplant);
+    color: var(--font-mandarin);
+    text-shadow: 2px 2px 2px var(--text-shadow-2);
+    box-shadow: 5px 5px 10px rgb(159, 159, 159);
+}
+
+/* 'Let's make furiends!' */
+.pet-parameters-card .card .card-content .card-title {
+    font-weight: 900;
+    margin: 30px 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px var(--text-shadow);
+}
+
+.select-wrapper input.select-dropdown {
+    margin-top: 10px;
+    height: 1.25rem;
+    background: white;
+    border-bottom: 1px solid var(--font-mandarin);
+    box-shadow: 3px 3px 3px rgb(53, 53, 53);
+}
+
+input[type=text]:not(.browser-default) {
+    margin-top: 10px;
+    height: 1.25rem;
+    font-size: 1rem;
+    background: white;
+    border-bottom: 1px solid var(--font-mandarin);
+    font-family: 'Dongle', 'Comic Sans', sans-serif;
+    display: block;
+    box-shadow: 3px 3px 3px rgb(53, 53, 53);
+}
+
+/* zip code label */
+.input-field>label {
+    /* font-family: 'Dongle', 'Comic Sans', sans-serif; */
+    color: var(--font-mandarin);
+    font-size: 1.25rem;
+}
+
+.furiends-list-title
+{
+    width:50%;
+    margin-left: 25%;
+}
+
+.furiends-cards
+{
+    padding: 5px;
+}
+
+#bottom-buttons {
+    display: flex;
+    width: 100%;
+}
+
+#reset-button {
+    font-size: 1.5rem;
+    position: relative;
+    left: 55px;
+    top: 5px;
+    text-transform: none;
+    color: var(--font-mandarin);
+}
+
+#fetch-button {
+    height: 40px;
+    padding: 0 20px;
+    padding-top: 5px;
+    font-size: 1.5rem;
+}
+
+.card .card-action {
+    width: 50%;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.loading-screen
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading
+{
+    border-radius: 100%;
+    align-content: center;
+    animation: rotation 1.5s infinite;
+}
+
+#warn-modal {
+    background: none;
+    transition: none;
+    box-shadow: none;
+    padding: 0 30px;
+    border-radius: 50px;
+    background-color: var(--bg-eggplant);
+    color: var(--font-mandarin);
+    box-shadow: 0 0 10px rgb(24, 24, 24);
+}
+
+#warn-modal-button {
+    background: var(--btn-junebud);
+    color: var(--bg-eggplant);
+    border-radius: 10px;
+    padding-top: 3px;
+    font-size: 1rem;
+    text-transform: none;
+}
+
+.modal .modal-footer {
+    background-color: var(--bg-eggplant);
+    margin-bottom: 25px;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    font-size: 1rem;
+    color: #ED7E47 !important;
+    text-shadow: none;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+#error-modal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position:absolute;
+    padding: 0;
+    margin: 10px 0;
+    bottom:0;
+}
+
+
+.modal-content{
+    height: 25vh;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+@keyframes bounce-4 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-100px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+@media screen and (max-width: 1600px) {
+    .dog-facts-card, .cat-facts-card {
+        margin: 300px auto;
+        width: 14%;
+    }
+
+    .pet-parameters-card {
+        margin: 40px 0;
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .dog-facts-card, .cat-facts-card {
+        margin: 300px auto;
+        width: 16%;
+    }
+
+    .pet-parameters-card {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .dog-facts-card, .cat-facts-card {
+        width: 18%;
+    }
+
+    .pet-parameters-card {
+        width: 58%;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    .dog-facts-card, .cat-facts-card {
+        display: none;
+    }
+
+    .pet-parameters-card {
+        margin: 40px auto;
+        width: 59%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .dog-facts-card, .cat-facts-card {
+        display: none;
+    }
+
+    .pet-parameters-card {
+        width: 62%;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+     .pet-parameters-card {
+        width: 67%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .pet-parameters-card {
+        width: 78%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .pet-parameters-card {
+        width: 85%;
+    }
+
+    #furiends-button {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .pet-parameters-card {
+        width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .pet-parameters-card {
+        margin: 40px auto;
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .pet-parameters-card {
+        margin: 40px auto;
+        width: 100%;
+    }
+
+    .pet-parameters-card div.card {
+        padding: 0 10px;
+    }
+  }

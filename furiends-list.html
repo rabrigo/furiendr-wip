@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html style="font-size: 30px">
+<html lang="en">
+    <head>
+        <!--Import Google Icon Font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection" />
+        <link rel="stylesheet" href="./assets/furiends-list-style.css"/>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Furiend's List</title>
+      </head>
+<body>
+    <!-- this is the Furiender nav bar -->
+    <nav>
+        <div class="nav-wrapper lighten-3">
+          <a href="./index.html"><img id="paw-img" src="./assets/images/paw-print-green.png"></a>
+          <a class="brand-logo center">Furiendr</a>
+          <a class="right waves-orange btn" id="furiends-button" href="./furiends-list.html">Furiend's List</a>
+        </div>
+      </nav>
+    <!-- Container for the body header and container -->
+    <div class="container">
+        <section class="col s12">
+            <header class="card-header center-align z-depth-2 furiends-list-title">
+                <h2>Furiend's List</h2>
+            </header>
+            <!-- Container where the results will populate via JS -->
+            <div class="card" id="results"></div>
+        </section>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/furiends-list-script.js"></script>
+</body>
+</html>

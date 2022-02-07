@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html style="font-size: 30px">
+
+<head>
+  <title>Furiendr</title>
+  <!--Import Google Icon Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <!-- this is the Furiender nav bar -->
+  <nav>
+    <div class="nav-wrapper lighten-3">
+      <a href="./index.html"><img id="paw-img" src="./assets/images/paw-print-green.png"></a>
+      <a class="brand-logo center">Furiendr</a>
+      <a class="right waves-orange btn" id="furiends-button" href="./furiends-list.html">Furiend's List</a>
+    </div>
+  </nav>
+  <main>
+  </div>
+  <div class='loading-screen hide'>
+    <img class='loading' src="./assets/images/paw-img.png">
+  </div>
+    <div class="row">
+      <!-- these are both pet facts cards -->
+      <div class="pet-facts-column">
+        <div class="pet-img">
+          <img class="bounce-4" src="./assets/images/cat-line-art-purple.png" height="200px">
+        </div>
+        <div class="pet-card">
+          <span class="pet-facts-title">
+            Cat Facts:
+          </span>
+          <p class="cat-facts"></p>
+        </div>
+      </div>
+      <!-- old cat facts card
+        <div class="cat-facts-card">
+          <div class="card-content">
+            <img class="bounce-4" src="./assets/images/cat-line-art-purple.png" height="200px">
+            <br>
+            <br>
+            <span id="cat-facts-title">Cat Facts:</span>
+            <p class="cat-facts"></p>
+          </div>
+        </div> -->
+    <!-- this is the pet parameters card -->
+    <div class="pet-parameters-card">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title center">Let's make some furiends!</span>
+          <!-- these are the materialize select inputs -->
+          <p>*What kind of pet are you looking for?</p>
+          <select class="input-field" id="type-parameter">
+            <option value="" selected>Required</option>
+            <option value="1">Cat</option>
+            <option value="2">Dog</option>
+            <option value="3">Both</option>
+          </select>
+          <br>
+          <p>Any specific gender?</p>
+          <select class="input-field" id="gender-parameter">
+            <option value=""  disabled selected></option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Both</option>
+          </select>
+          <br>
+          <p id="breed-parameter-header">Any specific breeds?</p>
+          <input type="text" class="input-field" id="breed-parameter">
+          <br>
+          <p>Any specific size?</p>
+          <select class="input-field" id="size-parameter">
+            <option value="" disabled selected></option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+          </select>
+          <br>
+          <p>What age?</p>
+          <select class="input-field" id="age-parameter">
+            <option value="" disabled selected></option>
+            <option value="1">Young</option>
+            <option value="2">Adult</option>
+            <option value="3">Senior</option>
+          </select>
+          <br>
+          <p>How about the coat length of your pet?</p>
+          <select class="input-field" id="coat-parameter">
+            <option value="" disabled selected></option>
+            <option value="1">Short</option>
+            <option value="2">Medium</option>
+            <option value="3">Long</option>
+          </select>
+          <br>
+          <div class="input-field col s7">
+            <input placeholder="Required" id="zip-code" type="text">
+            <label for="zip-code">*Zip Code</label>
+          </div>
+          <p>
+            <label>
+              <input name="group1" type="radio" id='25-miles' checked />
+              <span>25 Miles</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="group1" type="radio" id='50-miles' />
+              <span>50 Miles</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="group1" type="radio"  id='100-miles'/>
+              <span>100 Miles</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="group1" type="radio"  id='200-miles'/>
+              <span>200 Miles</span>
+            </label>
+          </p>
+          <br>
+          <!-- these are the checkboxes -->
+          <label>
+            <input type="checkbox" id="shots-parameter">
+            <span>Has all of their shots</span>
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" id="dog-friendly-parameter" class="browser-default"></input>
+            <span>Okay around dogs</span>
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" id="cat-friendly-parameter"></input>
+            <span>Okay around cats</span>
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" id="kid-friendly-parameter"></input>
+            <span>Okay around kids</span>
+          </label>
+          <br>
+                  <br>
+                  <div class="container" id="bottom-buttons">
+                    <div class="card-action bottom-button-space">
+                      <a id="reset-button" href="#">Reset all fields</a>
+                    </div>
+                    <div class="card-action center bottom-button-space">
+                      <a class="waves-effect waves-light btn" id="fetch-button" href="#">Fetch</a>
+                    </div>
+                  </div>
+        </div>
+      </div>
+    </div>
+    <div class="pet-facts-column">
+      <div class="pet-img">
+        <img class="dog-img" src="./assets/images/dog-line-art-purple.png" height="200px">
+      </div>
+      <div class="pet-card">
+        <span class="pet-facts-title">
+          Dog Facts:
+        </span>
+        <p class="dog-facts"></p>
+      </div>
+    </div>
+    <!-- old dog facts card
+    <div class="dog-facts-card">
+      <div class="card-content">
+        <img class="dog-img" src="./assets/images/dog-line-art-purple.png" height="200px">
+        <br>
+        <br>
+        <span id="dog-facts-title">Dog Facts:</span>
+        <p class="dog-facts"></p>
+      </div> -->
+      <div id="warn-modal" class="modal">
+        <div class="modal-content">
+          <h4>Don't fur-get!</h4>
+          <p>You have to put something for your pet type and zip code!</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" id="warn-modal-button" class="modal-close waves-effect waves-green btn-flat">Okay</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Website not found.</h4>
+        <p id ='error-message'>Please try again.</p>
+      </div>
+      <div id = 'error-modal' class="modal-footer">
+        <button id='restart-button'  class="waves-effect waves-light btn"><i class="material-icons left">restart_alt</i>Try Again</button> 
+      </div>
+    </div>
+  </main>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src='./assets/script.js'></script>
+</body>
+
+</html>

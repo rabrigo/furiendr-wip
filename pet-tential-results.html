@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" style="font-size: 30px">
+  <head>
+    <title>Furiend Finder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/style.css"/>
+    <link rel="stylesheet" href="./assets/carousel-style.css">
+
+</head>
+  <body>
+    <nav>
+      <div class="nav-wrapper lighten-3">
+        <a href="index.html">
+        <img id="paw-img" src="./assets/images/paw-print-green.png">
+        </a>
+        <a class="brand-logo center">Furiendr</a>
+        <a class="right waves-effect waves-light btn" id="furiends-button" href="./furiends-list.html">Furiend's List</a>
+      </div>
+    </nav>
+    <main class='main'>
+      <div class="carousel carousel-slider" id='carousel'>
+      </div>
+        <div class= 'loading-screen'>
+          <img class='loading' src="./assets/images/paw-img.png">
+      </div>
+      <section class = 'pet-tential-selection-buttons hide center'>
+        <button id='remove-button' class="modal-trigger waves-effect waves-light btn"><i class="material-icons left">chevron_left</i>Remove</button> 
+        <button id='furiends-list-button' class="waves-effect waves-light btn fetch"><i class="material-icons right">pets</i>Fetch your Furiends List</button> 
+        <button id='save-button' class="modal-triggerwaves-effect waves-light btn"><i class="material-icons right">chevron_right</i>Save</button> 
+      </section>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Hmm... It seems like someone fur-got the door open.</h4>
+          <p id ='error-message'>There are no pet-tential Furiends to be found here!</p>
+        </div>
+        <div class="modal-footer">
+          <button id='restart-button'  class="waves-effect waves-light btn"><i class="material-icons left">restart_alt</i>Try Again</button> 
+          <button id="modal-furiends-button"  class="waves-effect waves-light btn fetch"><i class="material-icons right">pets</i>Fetch your Furiends List</button> 
+        </div>
+      </div>
+    </main>
+    <footer class ='pet-tential-footer hide'>
+      <button id='restart-footer-button'  class="waves-effect waves-light btn"><i class="material-icons left">restart_alt</i>Try Again</button> 
+      <button id="furiends-footer-button"  class="waves-effect waves-light btn fetch"><i class="material-icons right">pets</i>Fetch your Furiends List</button> 
+    </footer>
+  </body>
+  <!-- This version of JQuery version is needed for the carousel to work properly -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script  src="./assets/pet-tentials.js"></script>
+</html>

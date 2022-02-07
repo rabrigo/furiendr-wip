@@ -1,0 +1,128 @@
+* {
+    font-family: 'Dongle', 'Comic Sans', sans-serif;
+    font-weight: 700;
+    line-height: 0.8;
+    --bg-eggplant: #4e3b50;
+    --btn-junebud: #BDE25C;
+    --font-mandarin: #ed7e47;
+    --text-shadow: #2a202b;
+    --text-shadow-2: #403141;
+}
+
+body{
+    width: 100vw;
+}
+
+nav .nav-wrapper {
+    background-color: var(--bg-eggplant);
+    height: 80px;
+    box-shadow: 0 0 10px rgb(159, 159, 159);
+}
+
+#paw-img {
+    margin-top: 15px;
+    position: relative;
+    left: 10%;
+    width: 50px;
+    filter: drop-shadow(2px 2px 5px var(--text-shadow));
+}
+
+.btn:hover {
+    background-color: #d1ff65;
+ }
+
+#furiends-button {
+    font-family: 'Dongle', 'Comic Sans', sans-serif;
+    position: relative;
+    margin-top: 23px;
+    right: 5%;
+}
+
+ /* Furiendr logo */
+ nav .brand-logo.center {
+    color: var(--font-mandarin);
+    margin: 12px 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px var(--text-shadow);
+}
+
+h5{
+    padding-top: 2vh;
+}
+
+.card .card-content .card-title {
+    font-size: 1.5rem;
+    line-height: 0.8;
+    text-shadow: 2px 2px 5px rgb(235, 235, 235);
+}
+
+.carousel.carousel-slider .carousel-item p {
+    font-size: 1rem;
+    line-height: 0.8;
+    text-shadow: 2px 2px 5px rgb(235, 235, 235);
+}
+
+.carousel .carousel-item {
+    visibility:visible;
+    width: 340px !important;
+    background: none;
+    border: none;
+    overflow: visible;
+}
+
+.carousel-slider{
+    align-content: center;
+    height: 90vh;
+}
+
+.card{
+
+    border-radius: 8px; 
+    position: relative !important;
+    right: 20px !important;
+}
+
+.animal-image{
+    height: 50vh; 
+    object-fit: contain;
+}
+
+/* .pet-tential-selection-buttons, .pet-tential-footer, .modal-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position:absolute;
+    bottom:0;
+    width:100%;
+} */
+
+.pet-tential-selection-buttons {
+    position: fixed;
+    width:100%;
+    bottom: 10px;
+}
+
+.btn i {
+    font-size: .8rem;
+    line-height: 1.4;
+}
+
+#furiends-list-button {
+    /* line-height: 2; */
+    margin-left: 10%;
+    margin-right: 12%;
+}
+
+.btn{
+    font-family: 'Dongle', 'Comic Sans', sans-serif;
+    margin: 1vw;
+}
+.modal-content{
+    height: 25vh;
+}
+.modal-footer{
+    justify-content: space-evenly;
+}
+#error-message {
+    font-size: 1em;
+}
